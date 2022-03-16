@@ -1,0 +1,92 @@
+body{
+    background-color: #9dd6ff;
+}
+
+.link-active{
+    font-weight:500;
+}
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    margin: 0 10px;
+    font-size: 1.2em;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  nav{
+      margin-bottom: 2em;
+  }
+  
+  /* stroke */
+  nav.stroke ul li a{
+    position: relative;
+  }
+  nav.stroke ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+
+  .img-nav{
+    width: 120px;
+    height: auto;
+  }
+
+  .link-footer{
+    width: 140px;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 1000px) {
+      .img-nav{
+                width: 80px;
+                height: auto;
+        }
+}
+
+  #timeopen{
+      background-color: #FFFDE7;
+      padding: 1.2em;
+      padding-left: 2em;
+      margin: 1em;
+  }
+
+  #timeopen .welcome{
+    font-size: 1.5em;
+}
+
+#timeopen .openTimes{
+    font-size: 1.2em;
+}
+
+.contactHeader{
+    font-size: 1.5em;
+    margin-bottom: 0em;
+}
